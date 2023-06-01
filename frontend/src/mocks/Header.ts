@@ -1,4 +1,4 @@
-import { HeaderType } from "components/modules/Header/Header.type";
+import { HeaderType } from "modules/Header/Header.type";
 
 export const mock_Header: HeaderType = {
   headerData: [

@@ -1,4 +1,4 @@
-import { ChooseExperienceType } from "components/modules/ChooseExperience/ChooseExperience.type";
+import { ChooseExperienceType } from "modules/ChooseExperience/ChooseExperience.type";
 
 export const mock_ChooseExperience: ChooseExperienceType = {
   image:

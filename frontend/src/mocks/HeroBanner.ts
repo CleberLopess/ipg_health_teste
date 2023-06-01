@@ -1,4 +1,4 @@
-import { HeroBannerType } from "components/modules/HeroBanner/HeroBanner.type";
+import { HeroBannerType } from "modules/HeroBanner/HeroBanner.type";
 
 export const mock_HeroBanner: HeroBannerType = {
   title: "Travel to your dream destination",

@@ -7,8 +7,8 @@ export const Header = ({ headerData }: HeaderType) => {
   const getDataHeader = useMemo(() => {
     return (
       <div className={styles.contentItens}>
-        {headerData.map((item) => (
-          <a className={styles.itens} href={item.link}>
+        {headerData.map((item, index) => (
+          <a key={index} className={styles.itens} href={item.link}>
             {item.label}
           </a>
         ))}

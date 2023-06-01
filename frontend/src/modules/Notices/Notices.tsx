@@ -7,8 +7,9 @@ export const Notices = ({ noticesData }: NoticesType) => {
   const getNoticesCards = useMemo(() => {
     return (
       <div className={styles.contentNotices}>
-        {noticesData.map((item) => (
+        {noticesData.map((item, index) => (
           <CardsNotices
+            key={index}
             description={item.description}
             image={item.image}
             title={item.title}

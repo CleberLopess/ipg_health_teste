@@ -7,8 +7,9 @@ export const Depoiments = ({ depoimentsData }: DepoimentsType) => {
   const getDepoimentsCards = useMemo(() => {
     return (
       <div className={styles.contentDepoiments}>
-        {depoimentsData.map((item) => (
+        {depoimentsData.map((item, index) => (
           <CardsDepoiments
+            key={index}
             depoiment={item.depoiment}
             name={item.name}
             photo={item.photo}

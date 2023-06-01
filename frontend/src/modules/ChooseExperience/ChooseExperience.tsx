@@ -8,8 +8,8 @@ export const ChooseExperience = ({
   title,
 }: ChooseExperienceType) => {
   const getParagraph = useMemo(() => {
-    return paragraph.map((item) => (
-      <div className={styles.paragraphItem}>
+    return paragraph.map((item, index) => (
+      <div key={index} className={styles.paragraphItem}>
         <h4 className={styles.paragraphTitle}>{item.title}</h4>
         <p className={styles.paragraphDescription}>{item.description}</p>
       </div>

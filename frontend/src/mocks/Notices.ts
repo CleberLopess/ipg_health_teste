@@ -1,4 +1,4 @@
-import { NoticesType } from "components/modules/Notices/Notices.types";
+import { NoticesType } from "modules/Notices/Notices.types";
 
 export const mock_Notices: NoticesType = {
   noticesData: [
