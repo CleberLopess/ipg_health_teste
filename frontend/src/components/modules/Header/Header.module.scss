@@ -1,0 +1,34 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.header {
+  padding: 78px 0;
+
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    .contentItens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      max-width: 30%;
+      width: 100%;
+      justify-content: space-between;
+
+      .itens {
+        @include fontBody_02;
+        font-weight: 300;
+        transition: all 0.3s;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

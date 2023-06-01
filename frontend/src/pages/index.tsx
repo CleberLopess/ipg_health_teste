@@ -1,16 +1,19 @@
-import { Button } from "components/Button/Button";
-import { CardsDepoiments } from "components/CardsDepoiments/CardsDepoiments";
-import { CardsNotices } from "components/CardsNotices/CardsNotices";
-import { mock_Button } from "mocks/Button";
-import { mock_CardsDepoiments } from "mocks/CardsDepoiments";
-import { mock_CardsNotices } from "mocks/CardsNotices";
+import { ChooseExperience } from "components/modules/ChooseExperience/ChooseExperience";
+import { Header } from "components/modules/Header/Header";
+import { HeroBanner } from "components/modules/HeroBanner/HeroBanner";
+import { Notices } from "components/modules/Notices/Notices";
+import { mock_ChooseExperience } from "mocks/ChooseExperience";
+import { mock_Header } from "mocks/Header";
+import { mock_HeroBanner } from "mocks/HeroBanner";
+import { mock_Notices } from "mocks/Notices";
 
 export default function Home() {
   return (
     <div>
-      <CardsNotices {...mock_CardsNotices} />
-      <Button {...mock_Button} />
-      <CardsDepoiments {...mock_CardsDepoiments} />
+      <Header {...mock_Header} />
+      <HeroBanner {...mock_HeroBanner} />
+      <Notices {...mock_Notices} />
+      <ChooseExperience {...mock_ChooseExperience} />
     </div>
   );
 }

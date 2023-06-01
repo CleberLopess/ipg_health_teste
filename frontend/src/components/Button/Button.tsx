@@ -1,12 +1,12 @@
-import React from "react";
+import React, { memo } from "react";
 import { ButtonTypes } from "./Button.types";
 import styles from "./Button.module.scss";
 
-export const Button = ({
+export const Button = memo(function Button({
   children,
   model = "full",
   onCLickButton,
-}: ButtonTypes) => {
+}: ButtonTypes) {
   const buttonClassName = `${styles.button} ${styles[model]}`;
 
   return (
@@ -14,4 +14,4 @@ export const Button = ({
       {children}
     </button>
   );
-};
+});

@@ -7,7 +7,7 @@ $screen-lg-min: 1720px;
 @mixin layoutGrid {
   article {
     width: 90%;
-    max-width: 1329px;
+    max-width: 1207px;
     margin: 0 auto;
 
     @media (min-width: #{$screen-sm-min}) {

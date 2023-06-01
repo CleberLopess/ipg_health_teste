@@ -7,7 +7,7 @@ $bodyFont: "Lato";
   font-family: $titleFont;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
   letter-spacing: -2px;
 
   @include media-md-desktop {
@@ -27,7 +27,7 @@ $bodyFont: "Lato";
   font-family: $titleFont;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   letter-spacing: -1px;
 
   @include media-md-desktop {
@@ -51,12 +51,8 @@ $bodyFont: "Lato";
   font-family: $bodyFont;
   font-style: normal;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.563rem;
   letter-spacing: -1px;
-
-  @include media-md-desktop {
-    font-size: 1.563rem;
-  }
 }
 
 @mixin fontBody_02 {

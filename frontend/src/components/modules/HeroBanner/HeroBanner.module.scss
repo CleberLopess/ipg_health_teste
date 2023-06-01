@@ -1,0 +1,50 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .image {
+    width: 100%;
+    height: 419px;
+    max-width: 662px;
+    object-fit: cover;
+  }
+
+  .contentTitles {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+
+    .title {
+      @include fontTitle_01;
+      line-height: 81px;
+    }
+
+    .description {
+      @include fontBody_03;
+      text-align: justify;
+    }
+  }
+
+  @include media-md-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .image {
+      order: 1;
+    }
+
+    .contentTitles {
+      max-width: 429px;
+      order: 0;
+      text-align: start;
+    }
+  }
+}
