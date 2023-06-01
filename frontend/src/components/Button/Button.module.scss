@@ -1,0 +1,30 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.button {
+  @include fontBody_02;
+  padding: 20px 55px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+
+  &.full {
+    background-color: IPGColors($body-black);
+    color: IPGColors($font-white);
+
+    &:hover {
+      background-color: rgba(IPGColors($body-black), 0.8);
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    color: IPGColors($font-black);
+    border: 2px solid IPGColors($body-black);
+
+    &:hover {
+      background-color: rgba(IPGColors($body-black), 0.5);
+    }
+  }
+}

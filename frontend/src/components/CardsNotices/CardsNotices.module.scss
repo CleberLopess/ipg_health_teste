@@ -1,0 +1,39 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.card {
+  width: 363px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .contentImage {
+    display: flex;
+    justify-content: center;
+    height: 237px;
+    flex-direction: column;
+
+    &:after {
+      content: "";
+      width: 53px;
+      border: 1px solid IPGColors($font-black);
+      margin-top: 32px;
+      display: flex;
+    }
+
+    .image {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  .title {
+    @include fontTitle_02;
+    width: 60%;
+  }
+
+  .description {
+    @include fontBody_03;
+  }
+}

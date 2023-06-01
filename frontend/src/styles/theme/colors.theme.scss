@@ -1,0 +1,19 @@
+$body-black: "body-black";
+$body-white: "body-white";
+$body-gray: "body-gray";
+$font-black: "font-black";
+$font-white: "font-white";
+$font-gray: "font-gray";
+
+$colors: (
+  $body-black: #232323,
+  $body-white: #e9e7e7,
+  $body-gray: #c4c4c4,
+  $font-black: #232323,
+  $font-white: #e9e7e7,
+  $font-gray: #6d6d6d,
+);
+
+@function IPGColors($color-name) {
+  @return map-get($colors, $color-name);
+}

@@ -1,0 +1,76 @@
+@import "../mixin/layout.mixin.scss";
+
+$titleFont: "Cardo";
+$bodyFont: "Lato";
+
+@mixin fontTitle_01 {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+
+  @include media-md-desktop {
+    font-size: 5.063rem;
+  }
+}
+
+@mixin fontTitle_02 {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  letter-spacing: -1px;
+}
+
+@mixin fontTitle_03 {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+
+  @include media-md-desktop {
+    font-size: 3.438rem;
+  }
+}
+
+@mixin fontTitle_04 {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+
+  @include media-md-desktop {
+    font-size: 3.938rem;
+  }
+}
+
+@mixin fontBody_01 {
+  font-family: $bodyFont;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+
+  @include media-md-desktop {
+    font-size: 1.563rem;
+  }
+}
+
+@mixin fontBody_02 {
+  font-family: $bodyFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.313rem;
+  font-size: 21px;
+  letter-spacing: -1px;
+}
+
+@mixin fontBody_03 {
+  font-family: $bodyFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
