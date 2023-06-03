@@ -21,7 +21,7 @@ export const Header = ({ headerData }: HeaderType) => {
       <article className={styles.article}>
         {getDataHeader}
         <Button model="outline" onCLickButton={() => {}}>
-          Label
+          Contact Us
         </Button>
       </article>
     </header>

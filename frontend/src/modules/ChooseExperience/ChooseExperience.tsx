@@ -17,7 +17,7 @@ export const ChooseExperience = ({
   }, []);
 
   return (
-    <section className={styles.section}>
+    <section id="flights" className={styles.section}>
       <article className={styles.article}>
         <div className={styles.contentTitle}>
           <h2 className={styles.title}>{title}</h2>

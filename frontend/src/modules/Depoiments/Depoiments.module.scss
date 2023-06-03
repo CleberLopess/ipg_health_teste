@@ -1,0 +1,38 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.section {
+  margin-top: 100px;
+  position: relative;
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .title {
+      @include fontTitle_01;
+      max-width: 630px;
+      text-align: center;
+    }
+
+    .arrowLeft,
+    .arrowRight {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .arrowLeft {
+      left: 0px;
+    }
+
+    .arrowRight {
+      right: 0px;
+    }
+  }
+}

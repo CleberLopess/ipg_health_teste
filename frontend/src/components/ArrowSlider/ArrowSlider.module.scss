@@ -1,0 +1,24 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.button {
+  width: 84px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid IPGColors($body-black);
+  border-radius: 8px;
+  background-color: IPGColors($body-white);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: IPGColors($body-gray);
+  }
+
+  .image {
+    display: flex;
+    width: 36px;
+  }
+}

@@ -1,0 +1,100 @@
+@import "styles/mixin/layout.mixin.scss";
+@import "styles/theme/colors.theme.scss";
+@import "styles/theme/typography.theme.scss";
+
+.footer {
+  margin-top: 50px;
+  padding: 40px 0;
+  background-color: IPGColors($body-gray);
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include media-lg-desktop {
+      gap: 126px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @include media-lg-desktop {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .title {
+        @include fontTitle_04;
+        line-height: 63px;
+      }
+
+      .contentAreaLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .titleLinks {
+          @include fontBody_01;
+        }
+
+        .contentLinks {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: space-between;
+
+          .link {
+            @include fontBody_02;
+            font-weight: 400;
+            width: 40%;
+
+            @include media-md-desktop {
+              width: 20%;
+            }
+
+            &:hover {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    .reserved {
+      @include fontBody_02;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @include media-md-desktop {
+    padding: 118px 0 80px;
+
+    .article {
+      gap: 80px;
+      .wrapper {
+        gap: 60px;
+        .contentAreaLinks {
+          .link {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-lg-desktop {
+    .article {
+      .wrapper {
+        .contentAreaLinks {
+          .link {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,25 +1,27 @@
 import { ChooseExperience } from "modules/ChooseExperience/ChooseExperience";
 import { Header } from "modules/Header/Header";
 import { HeroBanner } from "modules/HeroBanner/HeroBanner";
-import { Notices } from "modules/Notices/Notices";
+import { Guides } from "modules/Guides/Guides";
+
+//mocks
 import { mock_ChooseExperience } from "mocks/ChooseExperience";
 import { mock_Header } from "mocks/Header";
 import { mock_HeroBanner } from "mocks/HeroBanner";
-import { mock_Notices } from "mocks/Notices";
-import { CardsDepoiments } from "components/CardsDepoiments/CardsDepoiments";
-import { mock_CardsDepoiments } from "mocks/CardsDepoiments";
+import { mock_Guides } from "mocks/Guides";
+import { Depoiments } from "modules/Depoiments/Depoiments";
+import { mock_Depoiments } from "mocks/Depoiments";
+import { mock_Footer } from "mocks/Footer";
+import { Footer } from "modules/Footer/Footer";
 
 export default function Home() {
   return (
     <div>
       <Header {...mock_Header} />
       <HeroBanner {...mock_HeroBanner} />
-      <Notices {...mock_Notices} />
+      <Guides {...mock_Guides} />
       <ChooseExperience {...mock_ChooseExperience} />
-
-      <CardsDepoiments {...mock_CardsDepoiments} />
-      <CardsDepoiments {...mock_CardsDepoiments} />
-      <CardsDepoiments {...mock_CardsDepoiments} />
+      <Depoiments {...mock_Depoiments} />
+      <Footer {...mock_Footer} />
     </div>
   );
 }

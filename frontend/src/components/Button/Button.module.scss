@@ -24,7 +24,7 @@
     border: 2px solid IPGColors($body-black);
 
     &:hover {
-      background-color: rgba(IPGColors($body-black), 0.2);
+      background-color: IPGColors($body-gray);
     }
   }
 }

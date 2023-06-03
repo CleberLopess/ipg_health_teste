@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lato:wght@100;300;400;700;900&display=swap");
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
 @import "styles/theme/colors.theme.scss";
 @import "styles/mixin/layout.mixin.scss";
 
@@ -19,12 +20,27 @@ body {
   height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   @include layoutGrid;
   color: IPGColors($font-black);
   background: IPGColors($body-white);
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: IPGColors($body-gray);
+    border-radius: 20px;
+    border: 3px solid IPGColors($body-white);
+  }
 }
 
 a {

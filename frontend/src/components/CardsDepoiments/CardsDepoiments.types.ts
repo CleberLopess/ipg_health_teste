@@ -1,5 +1,6 @@
 export type CardsDepoimentsTypes = {
-  photo?: string;
+  avatar?: string;
   name: string;
   depoiment: string;
+  id?: string;
 };
