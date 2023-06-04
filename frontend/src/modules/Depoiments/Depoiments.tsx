@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { DepoimentsType } from "./Depoiments.type";
 import styles from "./Depoiments.module.scss";
 import { CardsDepoiments } from "components/CardsDepoiments/CardsDepoiments";
 import { Carousel } from "react-responsive-carousel";
@@ -7,7 +6,7 @@ import { ArrowSlider } from "components/ArrowSlider/ArrowSlider";
 import { getDepoiments } from "pages/api/getDepoiments";
 import { CardsDepoimentsTypes } from "components/CardsDepoiments/CardsDepoiments.types";
 
-export const Depoiments = ({ depoimentsData }: DepoimentsType) => {
+export const Depoiments = () => {
   const [dataDepoiments, setDataDepoiments] = useState<CardsDepoimentsTypes[]>(
     []
   );
@@ -45,7 +44,6 @@ export const Depoiments = ({ depoimentsData }: DepoimentsType) => {
     }
     return null;
   };
-  console.log(dataDepoiments);
 
   const getDepoimentsCards = useMemo(() => {
     return (

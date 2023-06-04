@@ -9,7 +9,6 @@ import { mock_Header } from "mocks/Header";
 import { mock_HeroBanner } from "mocks/HeroBanner";
 import { mock_Guides } from "mocks/Guides";
 import { Depoiments } from "modules/Depoiments/Depoiments";
-import { mock_Depoiments } from "mocks/Depoiments";
 import { mock_Footer } from "mocks/Footer";
 import { Footer } from "modules/Footer/Footer";
 
@@ -20,7 +19,7 @@ export default function Home() {
       <HeroBanner {...mock_HeroBanner} />
       <Guides {...mock_Guides} />
       <ChooseExperience {...mock_ChooseExperience} />
-      <Depoiments {...mock_Depoiments} />
+      <Depoiments />
       <Footer {...mock_Footer} />
     </div>
   );

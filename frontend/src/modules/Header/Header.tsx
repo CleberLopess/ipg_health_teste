@@ -1,5 +1,6 @@
-import { Button } from "components/Button/Button";
 import React, { useMemo } from "react";
+import Link from "next/link";
+import { Button } from "components/Button/Button";
 import { HeaderType } from "./Header.type";
 import styles from "./Header.module.scss";
 
@@ -8,9 +9,9 @@ export const Header = ({ headerData }: HeaderType) => {
     return (
       <div className={styles.contentItens}>
         {headerData.map((item, index) => (
-          <a key={index} className={styles.itens} href={item.link}>
+          <Link key={index} className={styles.itens} href={item.link}>
             {item.label}
-          </a>
+          </Link>
         ))}
       </div>
     );

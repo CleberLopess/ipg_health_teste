@@ -1,13 +1,14 @@
 import React, { useMemo } from "react";
+import Link from "next/link";
 import { FooterTypes } from "./Footer.types";
 import styles from "./Footer.module.scss";
 
 export const Footer = ({ links }: FooterTypes) => {
   const getLinks = useMemo(() => {
     return links.map((item) => (
-      <a key={item.link} className={styles.link} href={item.link}>
+      <Link key={item.link} className={styles.link} href={item.link}>
         {item.label}
-      </a>
+      </Link>
     ));
   }, []);
 
